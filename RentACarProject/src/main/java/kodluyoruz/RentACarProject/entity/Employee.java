@@ -15,4 +15,9 @@ import lombok.NoArgsConstructor;
 @Table(name = "employees")
 public class Employee extends User {
 
+	@Override
+	public String getRole() {
+		String getRole = "employee";
+		return getRole;
+	}
 }

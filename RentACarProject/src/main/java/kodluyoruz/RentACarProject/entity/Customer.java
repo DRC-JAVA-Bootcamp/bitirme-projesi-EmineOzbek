@@ -19,6 +19,12 @@ import lombok.NoArgsConstructor;
 @Table(name = "customers")
 public class Customer extends User {
 
+	@Override
+	public String getRole() {
+		String getRole = "customer";
+		return getRole;
+	}
+
 	@OneToMany(mappedBy = "customer")
 	private List<Rental> rentals;
 
