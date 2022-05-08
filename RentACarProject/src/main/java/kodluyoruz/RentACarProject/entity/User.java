@@ -26,9 +26,10 @@ public class User {
 	@Column
 	private int id;
 
-	@Column
+	@Column(unique = true)
 	private String email;
 
 	@Column
 	private String password;
+
 }

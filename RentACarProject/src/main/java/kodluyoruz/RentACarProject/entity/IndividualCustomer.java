@@ -4,8 +4,6 @@ import java.time.LocalDate;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
@@ -23,8 +21,7 @@ import lombok.NoArgsConstructor;
 @PrimaryKeyJoinColumn(name = "customer_id")
 public class IndividualCustomer extends Customer {
 
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "nationality_id")
+	@Column(name = "nationality_id", unique = true)
 	private String nationalId;
 
 	@Column(name = "first_name")
