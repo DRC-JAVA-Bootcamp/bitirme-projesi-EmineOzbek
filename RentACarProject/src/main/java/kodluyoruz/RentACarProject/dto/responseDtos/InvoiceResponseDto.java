@@ -5,11 +5,11 @@ import java.time.LocalDate;
 import lombok.Data;
 
 @Data
-public class PaymentResponseDto {
+public class InvoiceResponseDto {
 
 	private int id;
-	private double totalPrice;
-	private LocalDate paymetDate;
+	private String email;
+	private LocalDate invoiceDate;
 	private int rentalId;
-
+	private double totalPrice;
 }
