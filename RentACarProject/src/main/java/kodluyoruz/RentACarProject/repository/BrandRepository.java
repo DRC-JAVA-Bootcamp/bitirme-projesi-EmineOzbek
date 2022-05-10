@@ -11,5 +11,6 @@ import kodluyoruz.RentACarProject.entity.Car;
 @Repository
 public interface BrandRepository extends CrudRepository<Brand, Integer> {
 
-	List<Brand> findAllBrandsById(Car car); 
+	List<Brand> findAllBrandsById(Car car);
+
 }
