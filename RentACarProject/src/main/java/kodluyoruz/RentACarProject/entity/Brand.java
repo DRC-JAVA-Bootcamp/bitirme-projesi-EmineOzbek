@@ -20,7 +20,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Table(name = "brands")
 public class Brand {
-
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column
@@ -31,5 +31,5 @@ public class Brand {
 
 	@OneToMany(mappedBy = "brand")
 	private List<Car> cars;
-
+	
 }
