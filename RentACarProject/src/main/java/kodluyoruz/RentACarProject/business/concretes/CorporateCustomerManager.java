@@ -20,7 +20,9 @@ public class CorporateCustomerManager implements CorporateCustomerService {
 
 	@Autowired
 	private CorporateCustomerRepository corporateCustomerRepository;
+	@Autowired
 	private RentalRepository rentalRepository;
+	@Autowired
 	private ModelMapper modelMapper;
 
 	@Override

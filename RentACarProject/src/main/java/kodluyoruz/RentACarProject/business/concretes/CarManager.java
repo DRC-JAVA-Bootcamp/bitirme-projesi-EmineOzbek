@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import kodluyoruz.RentACarProject.business.abstracts.CarService;
@@ -19,9 +20,13 @@ import kodluyoruz.RentACarProject.repository.FuelTypeRepository;
 @Service
 public class CarManager implements CarService {
 
+	@Autowired
 	private CarRepository carRepository;
+	@Autowired
 	private BrandRepository brandRepository;
+	@Autowired
 	private FuelTypeRepository fuelTypeRepository;
+	@Autowired
 	private ModelMapper modelMapper;
 
 	@Override

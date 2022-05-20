@@ -20,7 +20,9 @@ public class IndividualCustomerManager implements IndividualCustomerService {
 
 	@Autowired
 	private IndividualCustomerRepository individualCustomerRepository;
+	@Autowired
 	private RentalRepository rentalRepository;
+	@Autowired
 	private ModelMapper modelMapper;
 
 	@Override

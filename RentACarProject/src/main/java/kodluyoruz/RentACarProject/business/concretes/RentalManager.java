@@ -20,7 +20,9 @@ public class RentalManager implements RentalService {
 
 	@Autowired
 	private RentalRepository rentalRepository;
+	@Autowired
 	private CarRepository carRepository;
+	@Autowired
 	private ModelMapper modelMapper;
 
 	@Override

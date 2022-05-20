@@ -20,7 +20,9 @@ public class CarDamageManager implements CarDamageService {
 
 	@Autowired
 	private CarDamageRepository carDamageRepository;
+	@Autowired
 	private CarRepository carRepository;
+	@Autowired
 	private ModelMapper modelMapper;
 
 	@Override

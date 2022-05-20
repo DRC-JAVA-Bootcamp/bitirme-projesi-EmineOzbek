@@ -26,10 +26,15 @@ public class InvoiceManager implements InvoiceService {
 
 	@Autowired
 	private InvoiceRepository invoiceRepository;
+	@Autowired
 	private CorporateCustomerRepository corporateCustomerRepository;
+	@Autowired
 	private IndividualCustomerRepository individualCustomerRepository;
+	@Autowired
 	private InvoiceCorporateCustomerRepository invoiceCorporateCustomerRepository;
+	@Autowired
 	private InvoiceIndividualCustomerRepository invoiceIndividualCustomerRepository;
+	@Autowired
 	private ModelMapper modelMapper;
 
 	@Override

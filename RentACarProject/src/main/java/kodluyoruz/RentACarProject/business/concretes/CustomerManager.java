@@ -17,6 +17,7 @@ public class CustomerManager implements CustomerService {
 
 	@Autowired
 	private CustomerRepository customerRepository;
+	@Autowired
 	private ModelMapper modelMapper;
 
 	@Override

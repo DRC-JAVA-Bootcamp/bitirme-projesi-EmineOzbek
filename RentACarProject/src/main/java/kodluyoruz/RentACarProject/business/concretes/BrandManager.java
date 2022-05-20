@@ -20,7 +20,9 @@ public class BrandManager implements BrandService {
 
 	@Autowired
 	private BrandRepository brandRepository;
+	@Autowired
 	private CarRepository carRepository;
+	@Autowired
 	private ModelMapper modelMapper;
 
 	@Override
