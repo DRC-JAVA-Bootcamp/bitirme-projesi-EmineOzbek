@@ -9,13 +9,6 @@ In this Rent A Car Management Project, you can access cars, damage records, cust
 - H2 Database
 - Lombok
 - Model Mapper
-## Technologies
-- SpringBoot DevTools 
-- Spring Web
-- Spring Data JPA
-- H2 Database
-- Lombok
-- Model Mapper
 
 ## UML Diagram for Entities
 ![UML Diagram for Entities](https://github.com/EmineOzbek/RentACar-Project/blob/main/images/UML_entities.png)
